@@ -2,3 +2,50 @@
 	margin: 0px;
 	padding: 0px;
 }
+body {
+	width: 100%;
+	height: 1024px;
+	animation-name: test;
+    animation-duration: 10s;
+    background-color: black;
+}
+#conteneur {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	widows: 100%;
+	height:auto;
+}
+
+@keyframes test {
+    0%		{background-color: red;}
+    5%		{background-color: #FF0080;}	
+    10%		{background-color: #AE00FF;}
+    15%		{background-color: #FFDB00;}
+    20%		{background-color: #97FF00;}
+    25%  	{background-color: yellow;}
+    30%		{background-color: #00FFD8;}
+    35%		{background-color: #009DFF;}
+    40%		{background-color: #FF4F90;}
+    45%		{background-color: #FF2400;}
+    50%  	{background-color: blue;}
+    55%		{background-color: #FF5A00;}
+    60%		{background-color: #A3A1DB;}
+    65%		{background-color: #87DBD4;}
+    70%		{background-color: #DBD865;}
+    75%		{background-color: yellow;}
+    80%		{background-color: #70DB67;}
+    85%		{background-color: #DB5951;}
+    90%		{background-color: #A3AA6A;}
+    95%		{background-color: #F4FF9F;}
+    100% 	{background-color: green;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: test;
+    animation-duration: .01s;
+    position: absolute;
+}
