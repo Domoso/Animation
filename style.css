@@ -5,9 +5,10 @@
 body {
 	width: 100%;
 	height: 1024px;
-	animation-name: test;
-    animation-duration: 10s;
+	animation-name: fond;
+    animation-duration: 1s;
     background-color: black;
+    animation-iteration-count: infinite;
 }
 #conteneur {
 	display: flex;
@@ -17,7 +18,7 @@ body {
 	height:auto;
 }
 
-@keyframes test {
+@keyframes fond {
     0%		{background-color: red;}
     5%		{background-color: #FF0080;}	
     10%		{background-color: #AE00FF;}
@@ -42,10 +43,18 @@ body {
 }
 
 div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: test;
-    animation-duration: .01s;
-    position: absolute;
+    width: 600px;
+    height: 700px;
+    animation-name: einstein;
+    animation-duration: 1.25s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes einstein {
+	0% {left:0px; top:0px;}
+	25% {left: 700px; top: 0px;}
+	50% {left: 700px; top: 400px;}
+	75% {left: 0px; top: 400px;}
+	100% {left: 0px; top: 0px;}
 }
